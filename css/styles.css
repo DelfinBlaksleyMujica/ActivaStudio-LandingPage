@@ -9,14 +9,14 @@ body{
 .index__main__grid {  
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.3fr 2.1fr 0.1fr;
+    grid-template-rows: 0.5fr 2.4fr 0.3fr;
     grid-auto-columns: 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
     grid-template-areas:
-      "index__navBar__container"
-      "index__main__container"
-      "index__footer__container";
+        "index__navBar__container"
+        "index__main__container"
+        "index__footer__container";
   }
   
   .index__main__container {  
