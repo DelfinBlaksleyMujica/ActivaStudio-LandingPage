@@ -1,0 +1,220 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #C2B280;
+}
+
+
+
+.index__main__grid {  
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.3fr 2.1fr 0.1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "index__navBar__container"
+      "index__main__container"
+      "index__footer__container";
+  }
+  
+  .index__main__container {  
+    display: grid;
+    grid-template-columns: 0.5fr 0.7fr 0.7fr 0.5fr;
+    grid-template-rows: 1fr 2fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "index__main__tituloContainer index__main__tituloContainer index__main__tituloContainer index__main__tituloContainer"
+        "index__main__IzqContainer index__main__ImagenIzqContainer index__main__ImagenDerContainer index__main__DerContainer";
+    grid-area: index__main__container;
+}
+
+.index__main__IzqContainer{ 
+    grid-area: index__main__IzqContainer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.index__main__IzqContainer ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.index__main__IzqContainer ul a:hover{
+    transform: scale(1.1);
+    transition-duration: 1s;
+    text-decoration: none;
+}
+
+.index__main__IzqContainer ul a li{
+    height: 100px;
+    list-style-type: none;
+    text-align: center;
+}
+
+.index__main__IzqContainer ul a li p{
+    color: black;
+    font-family: "Phudu";
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+
+.index__main__DerContainer{ 
+    grid-area: index__main__DerContainer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.index__main__DerContainer ul{
+    display: flex;
+    flex-direction: column;
+}
+
+.index__main__DerContainer ul a:hover{
+    transform: scale(1.1);
+    transition-duration: 1s;
+    text-decoration: none;
+}
+.index__main__DerContainer ul a li{
+    height: 100px;
+    list-style-type: none;
+    text-align: center;
+}
+
+.index__main__DerContainer ul a li p{
+    color: black;
+    font-family: "Phudu";
+    font-size: 18px;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+
+
+
+
+.index__main__tituloContainer { grid-area: index__main__tituloContainer; }
+
+.index__main__ImagenIzqContainer { grid-area: index__main__ImagenIzqContainer; }
+
+.index__main__ImagenDerContainer { grid-area: index__main__ImagenDerContainer; }
+
+.index__navBar__container { 
+    grid-area: index__navBar__container;
+}
+.index__navBar__container nav { 
+    background-color:#C2B280 ;
+}
+
+.index__footer__container { 
+    grid-area: index__footer__container;
+    height: 30px;
+}
+
+.index__footer__textoContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.index__footer__textoContainer p{
+    animation-duration: 3s;
+    color: black;
+    font-family: "Grenze";
+    letter-spacing: 3px;
+    font-weight: 500;
+    animation-duration: 6s;
+
+    
+}
+
+
+
+/*Imagen izquierda del index*/
+
+.index__main__imagenIzq{
+        margin-right: -115px;
+        margin-top: -20px;
+    }
+
+.index__main__imagenDer{
+        margin-left: -115px;
+        margin-top: -20px;
+}
+
+
+.animate__fadeIn{
+        animation-duration: 3s;
+}
+
+/******************************************/
+
+/*ABOUT US*/
+
+
+.aboutUs__main__grid {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.3fr 2.1fr 0.6fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "index__navBar__container"
+      "aboutUs__main__container"
+      "index__footer__container";
+  }
+  
+  .index__navBar__container { grid-area: index__navBar__container; }
+  
+  .aboutUs__main__container {  display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 1.6fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "aboutUs__mainTitulo__container"
+      "aboutUs__mainTexto__container";
+    grid-area: aboutUs__main__container;
+  }
+  
+  .aboutUs__mainTitulo__container { grid-area: aboutUs__mainTitulo__container; }
+  
+  .aboutUs__mainTexto__container { 
+    grid-area: aboutUs__mainTexto__container; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutUs__mainTexto__container div{ 
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.aboutUs__mainTexto__container div p{ 
+   font-size: 16px;
+   font-family:"Phudu"; 
+   text-align: center;
+   font-weight: 400;
+   letter-spacing: 1px;
+}
+  
+  .index__footer__container { grid-area: index__footer__container; }
+
+  /*Efecto texto*/
+
+  .animate__backInDown{
+    animation-duration: 1.5s;
+  }
+  
